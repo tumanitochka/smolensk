@@ -1,3 +1,7 @@
+/* 
+    Сайт разработан Олегом =)
+*/
+
 html, body {background-color: #F6F6F6;}
 a {text-decoration: none;color: #404040;}
 a:hover, button:hover {color:#119FC3;transform:scale(1.2);transition: transform 0.2s ease-in-out;}
@@ -44,4 +48,6 @@ header {
 .headPanel button:nth-child(1) {
     display: none;
 }
+
+/* MAIN - первый экран */
 
