@@ -144,7 +144,7 @@ main {
 }
 
 .screen {
-    background: url(/css/img/bg-screen.png) lightgray 0px -69.174px / 100% 120% no-repeat;
+    background: url(../css/img/bg-screen.png) lightgray 0px -69.174px / 100% 120% no-repeat;
     filter: blur(0.5px);
     width: 1312px;
     height: 600px;
