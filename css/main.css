@@ -2,13 +2,76 @@
     Сайт разработан Олегом =)
 */
 
-html, body {background-color: #F6F6F6;}
-a {text-decoration: none;color: #404040;}
-a:hover, button:hover {color:#119FC3;transform:scale(1.2);transition: transform 0.2s ease-in-out;}
+@font-face {
+    font-family: "Roboto";
+    src: url(../css/font/Roboto-Regular.ttf);
+}
+
+html,
+body {
+    background-color: #F6F6F6;
+    font-family: "Roboto";
+    transition: all 0.5s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: #404040;
+}
+
+a:hover,
+button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+a:active,
+button:active {
+    transform: scale(1);
+}
+
+h1 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h2 {
+    color: #404040;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+h3 {
+    color: #404040;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+hr {
+    margin: 100px auto;
+    width: 1312px;
+}
+
+.txt {
+    width: 1321px;
+    color: #404040;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 1600px;
     height: 100%;
 }
@@ -23,8 +86,26 @@ header {
     margin-top: 32px;
 }
 
-.headLogo:hover {filter:brightness(1.2);transition:filter 0.5s ease-in-out;}
-.headLogo:active {transform:rotate3d(1, 1, 1, -20deg);transition:transform 0.5s ease-in-out;}
+header a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+header a:hover {
+    color: #119FC3;
+}
+
+.headLogo:hover {
+    filter: brightness(1.2);
+    transition: filter 0.5s ease-in-out;
+}
+
+.headLogo:active {
+    transform: rotate3d(1, 1, 1, -20deg);
+    transition: transform 0.3s ease-in-out;
+}
 
 .headNavigat {
     display: flex;
@@ -34,7 +115,6 @@ header {
 
 .headPanel {
     display: flex;
-    margin-right: auto;
     gap: 20px;
 }
 
@@ -51,3 +131,342 @@ header {
 
 /* MAIN - первый экран */
 
+main {
+    margin-top: 40px;
+    width: auto;
+}
+
+#screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.screen {
+    background: url(/css/img/bg-screen.png) lightgray 0px -69.174px / 100% 120% no-repeat;
+    filter: blur(0.5px);
+    width: 1312px;
+    height: 600px;
+} 
+
+.topScreen {
+    background-color: #40404080;
+    padding: 16px 0 21px 24px;
+    width: 560px;
+    height: 134px;
+    margin: 138px 0 0 80px;
+}
+
+.topScreen H1 {
+    color: #fff;
+}
+
+.topScreen p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bottomScreen {
+    display: inline-block;
+    padding: 10px 24px;
+    margin-top: 16px;
+    margin-left: 80px;
+    border-radius: 4px;
+    border: 1px solid rgba(64, 64, 64, 0.50);
+    background: rgba(64, 64, 64, 0.5);
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.bottomScreen:hover {
+    transform: scale(1);
+    transform: translateX(5px);
+    filter: brightness(1.2);
+    transition: filtee 1s ease-in, transform 0.3s ease-out;
+}
+
+.bottomScreen:active {
+    filter: brightness(1);
+    transform: translateX(3px);
+    transition: filtee 1s ease-in, transform 0.3s ease-out;
+
+}
+
+.screenText {
+    color: #404040;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 1312px;
+}
+
+.screenSlider {
+    margin-top: 46px;
+}
+
+.screenSlider:before,
+.screenSlider:after {
+    content: "";
+    background-color: #DCDCDC;
+    width: 614px;
+    height: 1px;
+}
+
+/* MAIN - оповещение */
+
+#alert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--ui-elements-own, #F0F0F0);
+    width: 100vw;
+    height: 100%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.alert H1 {
+    color: #119FC3;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* MAIN - второй экран */
+
+#service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.serviceItems {
+    display: flex;
+    gap: 70px;
+    margin-top: 60px;
+}
+
+.item {
+    display: flex;
+    text-align: center;
+    width: 276px;
+}
+
+.item p {
+    color: #404040;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.item span {
+    color: #119FC3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.item:hover span {border-bottom: 1px dashed #119FC3;}
+.item a {padding: 20px 0 20px 0;}
+.item a:hover {box-shadow: 0 1px 5px -3px black;}
+
+/* MAIN - третий экран */
+
+#stand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stand {
+    display: flex;
+    width: 1312px;
+    gap: 164px;
+}
+
+.standItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 328px;
+    height: 279px;
+    margin-top: 60px;
+}
+
+.standItems img {
+    width: 128px;
+    height: 128px;
+}
+
+.standItems p {
+    color: #404040;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* MAIN - четвертый экран */
+
+#declaration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-declaration  {
+    display: flex;
+    justify-content: center;
+    background-color: #F0F0F0;
+    width: 100vw;
+    height: 120vh;
+}
+
+.declaration {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1312px;
+    gap: 32px;
+    margin-top: 60px;
+}
+
+.cardItem {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 640px;
+    height: 336px;
+    border-radius: 16px 16px 0px 0px;
+    cursor: pointer;
+}
+
+.cardImage1 {
+    display: inline-block;
+    background-image: url(../css/img/item/01.png);
+    background-size: 100% 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px 16px 0px 0px;
+    width: 640px;
+    height: 255px;
+}
+
+.cardImage2 {
+    display: inline-block;
+    background-image: url(../css/img/item/02.png);
+    background-size: 100% 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px 16px 0px 0px;
+    width: 640px;
+    height: 255px;
+}
+
+.cardImage3 {
+    display: inline-block;
+    background-image: url(../css/img/item/03.png);
+    background-size: 100% 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px 16px 0px 0px;
+    width: 640px;
+    height: 255px;
+}
+
+.cardImage4 {
+    display: inline-block;
+    background-image: url(../css/img/item/04.png);
+    background-size: 100% 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px 16px 0px 0px;
+    width: 640px;
+    height: 255px;
+}
+
+.cardItem span {
+    display: inline-block;
+    padding: 9px 16px;
+    border-radius: 0px 160px 160px 0px;
+    background: #119FC3;
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 279px;
+    margin-top: -4%;
+}
+
+.cardItem p {
+    color: #404040;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+
+.cardItem:hover,
+.cardItem a:hover {
+    transform: scale(1.01);
+}
+
+
+
+.cardService {
+    margin-top: 60px;
+}
+
+.serviceItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../css/img/item/05.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 640px;
+    height: 331px;
+}
+
+.serviceItem::after {
+	content: "";
+    display: block;
+    background: transparent;
+	background-image: linear-gradient(to left, #000000, #000000);   
+	width: 100%;
+	height: 100%;
+    opacity: 0.5;
+}
+
+.seviceLabel {
+    margin-top: -50px;
+}
+
+.serviceTxt {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 640px;
+    height: 78px;
+    background-color: #fff;
+    margin-top: 0px;
+}
