@@ -445,7 +445,14 @@ main {
 }
 
 .articlesHead:after {
-    
+    content: " ";
+    display: flex;
+    margin: auto;
+    background-color: #fff;
+    padding: 2px;
+    width: 259px;
+    height: 2px;
+    margin-top: 51px;
 }
 
 .articlesHead p {
@@ -453,6 +460,16 @@ main {
     color: #FFF;
     text-align: center;
     font-size: 32.695px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.articlesFoot {
+    display: flex;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
