@@ -429,13 +429,16 @@ main {
 }
 
 .articlesHead {
-    background-image: url(../css/img/item/05.png);
+    
     background-color: lightgray;
     background-repeat: no-repeat;
     background-position: center;
     width: 640px;
     height: 331px;
 }
+
+.article:nth-child(1) .articlesHead {background-image: url(../css/img/item/05.png);}
+.article:nth-child(2) .articlesHead {background-color: #119FC3;}
 
 .articlesHead:before {
     content: url(../css/img/pp.svg);
