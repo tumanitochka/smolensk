@@ -71,9 +71,8 @@ hr {
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 1600px;
     height: 100%;
+    margin: auto;
 }
 
 /* HEADER */
@@ -81,6 +80,7 @@ body {
 header {
     display: flex;
     align-items: center;
+    margin: auto;
     width: 1312px;
     height: 100px;
     margin-top: 32px;
@@ -121,6 +121,7 @@ header a:hover {
 .headPanel button {
     border: none;
     background: none;
+    cursor: pointer;
     width: 24px;
     height: 24px;
 }
@@ -229,7 +230,7 @@ main {
     flex-direction: column;
     align-items: center;
     background: var(--ui-elements-own, #F0F0F0);
-    width: 100vw;
+    width: 100%;
     height: 100%;
     margin: auto;
     margin-top: 80px;
@@ -345,128 +346,114 @@ main {
     margin-top: 60px;
 }
 
-.cardItem {
+.news {
+    background: var(--ui-elements-own, #F0F0F0);
+    padding: 80px 80px;
+    
+}
+
+.wrapNews {
     display: flex;
-    flex-direction: column;
-    background-color: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 32px;
+}
+
+.new {
     width: 640px;
     height: 336px;
-    border-radius: 16px 16px 0px 0px;
-    cursor: pointer;
 }
 
-.cardImage1 {
-    display: inline-block;
-    background-image: url(../css/img/item/01.png);
-    background-size: 100% 130%;
-    background-position: center;
-    background-repeat: no-repeat;
+.new:hover span {
+    filter: brightness(1.2);
+}
+
+.newImage {
     border-radius: 16px 16px 0px 0px;
     width: 640px;
     height: 255px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.06), 0px 0px 4px 0px rgba(0, 0, 0, 0.04);
 }
 
-.cardImage2 {
-    display: inline-block;
-    background-image: url(../css/img/item/02.png);
-    background-size: 100% 150%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 16px 16px 0px 0px;
-    width: 640px;
-    height: 255px;
+.newImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.cardImage3 {
-    display: inline-block;
-    background-image: url(../css/img/item/03.png);
-    background-size: 100% 150%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 16px 16px 0px 0px;
-    width: 640px;
-    height: 255px;
+.newFoot {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #fff;
 }
 
-.cardImage4 {
-    display: inline-block;
-    background-image: url(../css/img/item/04.png);
-    background-size: 100% 150%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 16px 16px 0px 0px;
-    width: 640px;
-    height: 255px;
-}
-
-.cardItem span {
-    display: inline-block;
-    padding: 9px 16px;
+.newFoot span {
     border-radius: 0px 160px 160px 0px;
-    background: #119FC3;
+    background: var(--colors-1, #119FC3);
+    padding: 9px 16px;
+    margin-top: -25px;
     color: #fff;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 279px;
-    margin-top: -4%;
 }
 
-.cardItem p {
-    color: #404040;
-    font-family: Roboto;
+.newFoot p {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: 16px;
-    margin-top: 10px;
-}
-
-.cardItem:hover,
-.cardItem a:hover {
-    transform: scale(1.01);
+    padding-left: 16px;
 }
 
 
+/* СТАТЬИ */
 
-.cardService {
+#articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
     margin-top: 60px;
 }
 
-.serviceItem {
+.article {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 640px;
+    height: 409px;
+}
+
+.articlesHead {
     background-image: url(../css/img/item/05.png);
-    background-size: 100% 100%;
-    background-position: center;
+    background-color: lightgray;
     background-repeat: no-repeat;
+    background-position: center;
     width: 640px;
     height: 331px;
 }
 
-.serviceItem::after {
-	content: "";
-    display: block;
-    background: transparent;
-	background-image: linear-gradient(to left, #000000, #000000);   
-	width: 100%;
-	height: 100%;
-    opacity: 0.5;
-}
-
-.seviceLabel {
-    margin-top: -50px;
-}
-
-.serviceTxt {
+.articlesHead:before {
+    content: url(../css/img/pp.svg);
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.articlesHead:after {
+    
+}
+
+.articlesHead p {
+    margin-top: 37px;
+    color: #FFF;
     text-align: center;
-    width: 640px;
-    height: 78px;
-    background-color: #fff;
-    margin-top: 0px;
+    font-size: 32.695px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
