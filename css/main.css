@@ -515,12 +515,18 @@ footer {
 .foot {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 32px;
     margin-top: 40px;
 }
 
+/* .foot:last-child {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #fff;
+} */
+
 .footInfo {
-    display: block;
     width: 304px;
 }
 
