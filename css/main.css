@@ -502,3 +502,36 @@ main {
     font-weight: 400;
     line-height: normal;
 }
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #F0F0F0;
+    height: 469px;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.footInfo {
+    display: block;
+    width: 304px;
+}
+
+.footInfo p {
+    color: #404040;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.footInfo a:hover {
+    text-decoration: underline;
+}
