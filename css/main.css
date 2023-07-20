@@ -1073,17 +1073,17 @@ footer {
 @media screen and (max-width: 320px) {
     #none {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
-        color: var(--others-text, #404040);
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
+        color: #404040;
         height: 100vh;
         width: 100vw;
+    }
+
+    h1 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 
     header {
