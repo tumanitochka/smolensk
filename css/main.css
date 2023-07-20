@@ -14,6 +14,10 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
+#none {
+    display: none;
+}
+
 a {
     text-decoration: none;
     color: #404040;
@@ -279,6 +283,7 @@ main {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    margin: 0 15px 10px;
 }
 
 .item span {
@@ -501,6 +506,7 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 10px 50px;
 }
 
 
@@ -510,21 +516,18 @@ main {
 footer {
     background-color: #F0F0F0;
     height: 469px;
+
 }
 
 .foot {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 32px;
     margin-top: 40px;
+    width: 1312px;
+    margin: auto;
 }
-
-/* .foot:last-child {
-    display: flex;
-    justify-content: flex-start;
-    background-color: #fff;
-} */
 
 .footInfo {
     width: 304px;
@@ -540,4 +543,558 @@ footer {
 
 .footInfo a:hover {
     text-decoration: underline;
+}
+
+.footBottom {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1311px) {
+    header {
+        width: 1000px;
+    }
+
+    .headNavigat {
+        gap: 24px;
+    }
+
+    .screen {
+        width: 960px;
+    }
+
+    .screenText {
+        width: 960px;
+    }
+
+    .txt {
+        width: 937px;
+        text-align: left;
+    }
+
+    .item {
+        width: 230px;
+    }
+
+    .serviceItems {
+        gap: 13px;
+    }
+
+    .stand {
+        gap: 105px;
+    }
+
+    .stand {
+        width: 960px;
+    }
+
+    .standItems {
+        width: 250px;
+    }
+
+    .wrapNews {
+        gap: 60px;
+    }
+
+    .foot {
+        width: 960px;
+        gap: 17px;
+    }
+
+    hr {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+    header {
+        width: 728px;
+        justify-content: space-between;
+    }
+
+    .headNavigat {
+        display: none;
+    }
+
+    .headPanel button:nth-child(1) {
+        display: block;
+    }
+
+    .screen {
+        width: 728px;
+    }
+
+    .screenText {
+        width: 728px;
+    }
+
+    .txt {
+        width: 728px;
+        text-align: left;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-align: center;
+    }
+
+    #alert p.txt {
+        text-align: left;
+    }
+
+    .serviceItems {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stand {
+        width: 728px;
+    }
+
+    .standItems {
+        width: 200px;
+    }
+
+    .standItems p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    footer {
+        height: 600px;
+    }
+
+    .foot {
+        width: 728px;
+    }
+
+    .footInfo {
+        width: 221px;
+    }
+
+    hr {
+        width: 728px;
+    }
+
+    .footInfo p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    header {
+        width: 460px;
+        justify-content: space-between;
+    }
+
+    .headNavigat {
+        display: none;
+    }
+
+    .headPanel button:nth-child(1) {
+        display: block;
+    }
+
+    .screen {
+        width: 460px;
+        height: 260px;
+    }
+
+    .screenText {
+        width: 460px;
+    }
+
+    .txt {
+        width: 460px;
+        text-align: left;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-align: center;
+    }
+
+    #alert p.txt {
+        text-align: left;
+    }
+
+    .serviceItems {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stand {
+        width: 460px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .standItems {
+        width: 200px;
+    }
+
+    .standItems p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    footer {
+        height: 665px;
+    }
+
+    .foot {
+        width: 460px;
+    }
+
+    .footInfo {
+        width: 214px;
+    }
+
+    hr {
+        width: 460px;
+    }
+
+    .footInfo p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .topScreen {
+        width: 420px;
+        height: 121px;
+        margin: 38px 0 0 10px;
+    }
+
+    .topScreen p {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    H1 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .bottomScreen {
+        margin-left: 10px;
+    }
+
+    .new {
+        width: 460px;
+        height: 200px;
+    }
+
+    .news {
+        margin: auto;
+        width: 100vw;
+        height: 1248px;
+        padding: 0;
+    }
+
+    .newImage {
+        width: 460px;
+        height: 200px;
+    }
+
+    .wrapNews {
+        gap: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article {
+        width: 460px;
+        height: 254px;
+    }
+
+    .articlesHead, .articlesHead_bg {
+        width: 460px;
+        height: 200px;
+    }
+
+    .articlesHead p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        
+    }
+
+    .articlesHead_bg p:before, .articlesHead p:before {
+        width: 27px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .articlesHead_bg p:after, .articlesHead p:after {
+        width: 259px;
+        height: 2px;
+    }
+
+    .articlesFoot {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 18px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    header {
+        width: 300px;
+        justify-content: space-between;
+    }
+
+    .headNavigat {
+        display: none;
+    }
+
+    .headPanel button:nth-child(1) {
+        display: block;
+    }
+
+    .screen {
+        width: 300px;
+        height: 208px;
+        background: url(../css/img/bg-screen.png) lightgray -6.522px -23.058px / 102.609% 118.325% no-repeat;
+    }
+
+    .screenText {
+        width: 300px;
+    }
+
+    .txt {
+        width: 300px;
+        text-align: left;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-align: center;
+    }
+
+    #alert p.txt {
+        text-align: left;
+    }
+
+    .serviceItems {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stand {
+        width: 300px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .standItems {
+        width: 200px;
+    }
+
+    .standItems p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    footer {
+        height: 1135px;
+    }
+
+    .foot {
+        width: 300px;
+    }
+
+    .footInfo {
+        width: 214px;
+    }
+
+    hr {
+        width: 300px;
+    }
+
+    .footInfo p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .topScreen {
+        width: 264px;
+        height: 110px;
+        margin: 8px auto;
+    }
+
+    .topScreen p {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    H1 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: auto;
+    }
+
+    .bottomScreen {
+        margin-left: 10px;
+        padding: 6px 16px;
+        margin-top: 8px;
+    }
+
+    .new {
+        width: 300px;
+        height: 200px;
+    }
+
+    .news {
+        margin: auto;
+        width: 100vw;
+        height: 1248px;
+        padding: 0;
+    }
+
+    .newImage {
+        width: 299px;
+        height: 200px;
+    }
+
+    .wrapNews {
+        gap: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article {
+        width: 300px;
+        height: 254px;
+    }
+
+    .articlesHead, .articlesHead_bg {
+        width: 300px;
+        height: 200px;
+    }
+
+    .articlesHead p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        
+    }
+
+    .articlesHead_bg p:before, .articlesHead p:before {
+        width: 27px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .articlesHead_bg p:after, .articlesHead p:after {
+        width: 259px;
+        height: 2px;
+    }
+
+    .articlesFoot {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 18px 0 0;
+    }
+
+    .screenText {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    
+    .alert H1 {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #none {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: var(--others-text, #404040);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    header {
+        display: none;
+    }
+
+    main {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
 }
